@@ -9,7 +9,7 @@ install:
 # Run the Flask app locally
 run-app:
 	@echo "Running Flask app locally on port 9696..."
-	pipenv run gunicorn app:app --bind 0.0.0.0:9696
+	pipenv run gunicorn src.app:app --bind 0.0.0.0:9696
 
 # Build the Docker container
 build-docker:

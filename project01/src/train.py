@@ -29,8 +29,8 @@ def serialize_model(model, dv, filepath: str) -> None:
     
 def main():
     parser = argparse.ArgumentParser(description="Train a model and save it.")
-    parser.add_argument('-f', '--filename', type=str, default="data.csv", help="Path to the dataset file.")
-    parser.add_argument('-o', '--output', type=str, default="model.pkl", help="Path to save the trained model and DictVectorizer.")
+    parser.add_argument('-f', '--filename', type=str, default="./data/astana.csv", help="Path to the dataset file.")
+    parser.add_argument('-o', '--output', type=str, default="./models/model.pkl", help="Path to save the trained model and DictVectorizer.")
     args = parser.parse_args()
 
     try:
