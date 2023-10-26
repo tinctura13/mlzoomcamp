@@ -1,6 +1,30 @@
 # midterm project
 ML Zoomcamp 2023  
 ----
+```
+├── data               <- All the data for our project  
+│   └── raw            <- The original, immutable data dump.  
+│  
+├── models             <- Trained and serialized models, model predictions, or model summaries  
+│  
+├── notebooks          <- Jupyter notebooks with EDA and model selection  
+│  
+├── pics               <- Some pictures for README.md  
+│  
+├── src                <- Source code for use in this project.  
+│   ├── train.py       <- Script for training a model  
+│   └── app.py         <- Flask app with our model  
+│  
+├── Dockerfile         <- File for building a docker container with our app  
+│  
+├── Makefile           <- Makefile with commands like `make install` to prepare `pipenv` and so on  
+│  
+├── Pipfile            <- The pipenv file for reproducing the analysis environment, e.g.  
+├── Pipfile.lock  
+│  
+└── README.md          <- The top-level README for developers using this project.    
+```
+----
 I'm moving to Astana this Friday. Because of this move, I wanted to learn more about the rental prices in the city. So, I decided to make a project using rental ads.
 
 To start, I created a tool that collects rental ads from krisha.kz. This tool helped me get important details about each rental property.
