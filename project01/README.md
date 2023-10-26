@@ -30,16 +30,16 @@ I'm moving to Astana this Friday. Because of this move, I wanted to learn more a
 To start, I created a tool that collects rental ads from krisha.kz. This tool helped me get important details about each rental property.
 
 After getting the data, I looked at it closely to understand trends and patterns.
-  * [Dataset preparation and EDA](eda.ipynb)
+  * [Dataset preparation and EDA](notebooks/eda.ipynb)
 ---
 With the data ready, I tried different models to predict rental prices. Even though I tested many models, the simplest one, linear regression, worked the best. This might be because the data showed a strong link between the size of a property and its price.  
-  * [Model selection](modeling.ipynb)
+  * [Model selection](notebooks/modeling.ipynb)
 ---
 After finishing the EDA, I wrote a script to train my model. This script took the data from the rental ads and used it to teach the linear regression model. (use train.py -h for help)
-  * [Training script](train.py)
+  * [Training script](src/train.py)
 ---
 Next, I built a simple app using Flask. This app lets users see how my model works and get predictions for rental prices.  
-  * [Flask app with my model](app.py)
+  * [Flask app with my model](src/app.py)
   * To run the app you first need to check if you have `pipenv` installed, if not run:
     * `pip install pipenv`
     * then ensure that you are in the my project directory and run `pipenv --python 3`
