@@ -1,21 +1,45 @@
 # midterm project
 ML Zoomcamp 2023  
 ----
+```
+├── data               <- All the data for our project  
+│   └── raw            <- The original, immutable data dump.  
+│  
+├── models             <- Trained and serialized models, model predictions, or model summaries  
+│  
+├── notebooks          <- Jupyter notebooks with EDA and model selection  
+│  
+├── pics               <- Some pictures for README.md  
+│  
+├── src                <- Source code for use in this project.  
+│   ├── train.py       <- Script for training a model  
+│   └── app.py         <- Flask app with our model  
+│  
+├── Dockerfile         <- File for building a docker container with our app  
+│  
+├── Makefile           <- Makefile with commands like `make install` to prepare `pipenv` and so on  
+│  
+├── Pipfile            <- The pipenv file for reproducing the analysis environment, e.g.  
+├── Pipfile.lock  
+│  
+└── README.md          <- The top-level README for developers using this project.    
+```
+----
 I'm moving to Astana this Friday. Because of this move, I wanted to learn more about the rental prices in the city. So, I decided to make a project using rental ads.
 
 To start, I created a tool that collects rental ads from krisha.kz. This tool helped me get important details about each rental property.
 
 After getting the data, I looked at it closely to understand trends and patterns.
-  * [Dataset preparation and EDA](eda.ipynb)
+  * [Dataset preparation and EDA](notebooks/eda.ipynb)
 ---
 With the data ready, I tried different models to predict rental prices. Even though I tested many models, the simplest one, linear regression, worked the best. This might be because the data showed a strong link between the size of a property and its price.  
-  * [Model selection](modeling.ipynb)
+  * [Model selection](notebooks/modeling.ipynb)
 ---
 After finishing the EDA, I wrote a script to train my model. This script took the data from the rental ads and used it to teach the linear regression model. (use train.py -h for help)
-  * [Training script](train.py)
+  * [Training script](src/train.py)
 ---
 Next, I built a simple app using Flask. This app lets users see how my model works and get predictions for rental prices.  
-  * [Flask app with my model](app.py)
+  * [Flask app with my model](src/app.py)
   * To run the app you first need to check if you have `pipenv` installed, if not run:
     * `pip install pipenv`
     * then ensure that you are in the my project directory and run `pipenv --python 3`

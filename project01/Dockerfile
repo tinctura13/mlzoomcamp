@@ -9,7 +9,8 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 
 RUN pipenv install --system --deploy
 
-COPY ["app.py", "model.pkl", "./"]
+COPY ["src/app.py", "./"]
+COPY ["models/model.pkl", "/models/"]
 
 EXPOSE 9696 
 

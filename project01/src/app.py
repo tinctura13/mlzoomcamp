@@ -5,14 +5,13 @@ import pickle
 
 app = Flask("service")
 
-with open("model.pkl", "rb") as fin:
+with open("./models/model.pkl", "rb") as fin:
     model, dv = pickle.load(fin)
     
 
 @app.route("/predict", methods=["POST"])
 def predict():
     flat = request.json["flat"]
-    print(type(flat), flat)
     X = dv.transform([flat])
     proba = model.predict(X)
     response = {
