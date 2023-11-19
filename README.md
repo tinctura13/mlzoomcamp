@@ -6,5 +6,6 @@ ML Zoomcamp 2023
   * [homework # 04](hw04/hw04.ipynb)  
   * [homework # 05](hw05/hw05.ipynb)  
   * [homework # 06](hw06/hw06.ipynb)  
-  * [midterm project](project01/README.md)    
+  * [midterm project](project01/README.md)  
   * [homework # 08](hw08/hw08.ipynb)  
+  * [homework # 09](hw09/)  
