@@ -9,3 +9,4 @@ ML Zoomcamp 2023
   * [midterm project](project01/README.md)  
   * [homework # 08](hw08/hw08.ipynb)  
   * [homework # 09](hw09/)  
+  * [homework # 10](hw10/)  
