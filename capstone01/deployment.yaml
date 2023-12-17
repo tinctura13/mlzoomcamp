@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inpainter
+spec:
+  selector:
+    matchLabels:
+      app: inpainter
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: inpainter
+    spec:
+      containers:
+      - name: inpainter
+        image: capstone01:latest
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "500m"            
+          limits:
+            memory: "4Gi"
+            cpu: "1000m"
+        ports:
+        - containerPort: 8080
