@@ -1,4 +1,24 @@
 # Capstone project 01
+```
+├── pics               <- A Some pictures for README.md    
+│  
+├── src                <- Source code for use in this project.  
+│   ├── models         <- Dir with models that I use in my project  
+│   │  
+│   ├── app.py         <- FastAPI app  
+│   └── *.py           <- Files that we need for our service
+│  
+├── deployment.yaml    <- Config file for deploymnet
+│
+├── Dockerfile         <- File for building a docker container with our app  
+│  
+├── Makefile           <- Makefile with commands like `make install` to prepare `pipenv` and so on  
+│  
+├── README.md          <- The top-level README for developers using this project.    
+│  
+└── service.yaml       <- Config file for service
+```
+
 ## Problem 
 I've participated in a hackaton a couple weeks ago.  
 It had four track and I chose one of them that was about CV (computer vision)  
